@@ -14,7 +14,7 @@ $$ G = 1 + \frac{49.4\text{k}\Omega}{R_g} $$
 
 LM358 offset:
 
-$$ \frac{22\text{k}}{4.7\text{k}} \times 3.3 V \approx 0.7 V$$
+$$ \frac{4.7\text{k}}{4.7\text{k} + 22 \text{k}} \times 3.3 V \approx 0.6 V$$
 
 
 
