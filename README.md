@@ -36,7 +36,10 @@ This is the instrumentation amplifier that is relatively cheap and widely availa
 | ----------------------------------------- | ----------------------------------------- |
 
 ## Prototype 
-<img src="https://github.com/auralius/afe-ref-design/blob/main/images/prototype1.png" width="300">
+We will use STM32F411CE (the black pill) as our digital processor.
+
+| <img src="https://github.com/auralius/afe-ref-design/blob/main/images/prototype1.png" width="250"> | <img src="https://github.com/auralius/afe-ref-design/blob/main/images/prototype2.png" width="330"> |
+| ----------------------------------------- | ----------------------------------------- |
 
 ## Safety & Notes
 
