@@ -47,7 +47,7 @@ We will use STM32F411CE (the black pill) as our digital processor.
 - If powering from USB, beware ground noise from the host PC. A ferrite on the USB cable can help.
 
 ## Next-to-Do
-- 50/60 Hz notch filter (hum killer), currently there is a simple low pass filter at 59 Hz.
+- 50/60 Hz notch filter (hum killer).
 - PCB layouting.
 - Performance evaluations.
 
