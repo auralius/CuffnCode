@@ -1,5 +1,8 @@
-# CuffnCode
-This project is funded by IFAC Activity Fund (July 2025 to June 2026).
+<p align="center">
+  <img src="./images/cuffncode.png" width="200">
+</p>
+
+<h4 align="center">This project is funded by IFAC Activity Fund (July 2025 to June 2026)</h4>
 
 __CuffnCode__ is a retrofitted blood pressure measurement system for teaching and research. In the long term, it aims to become an overinstrumented platform for developing and testing signal processing and control algorithms.
 
