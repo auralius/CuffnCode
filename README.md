@@ -36,7 +36,7 @@ The MPS20N0040D is a millivolt-level bridge (≈50–100 mV full-scale; 4–6 k�
 ### TLC2272 (Dual, Low-Noise, Rail-To-Rail Operational Amplifier)
 This will be used to offset the instrumentation amplifier, giving headroom for possible undershoot or for signal that goes both ways (positive and negative).
 
-<img src="https://github.com/auralius/afe-ref-design/blob/main/images/tlc2272.png" width="300"> 
+<img src="./images/tlc2272.png" width="300"> 
 
 ### AD620
 This is the instrumentation amplifier that is relatively cheap and widely available in Indonesian market.
