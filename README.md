@@ -1,8 +1,17 @@
-# Analog Front End Design
-A reproducible, low-noise analog front end for millivolt bridge sensors (e.g., MPS20N0040D, typically used for __hobbyist__ sphygmomanometer), using AD620 instrumentation amplifier and LM358 level shift. This analog front end should also work for other millivolt instruments.
+# CuffnCode
+This project is funded by IFAC Activity Fund (July 2025 to June 2026).
+
+__CuffnCode__ is a retrofitted blood pressure measurement system for teaching and research. In the long term, it aims to become an overinstrumented platform for developing and testing signal processing and control algorithms.
+
+## Retrofitted pump system
+
+<img src="./images/complete_device.png" width="600"> 
+
+## Analog Front End Design
+A reproducible, low-noise analog front end for millivolt bridge sensors (e.g., MPS20N0040D, typically used for __hobbyist__ sphygmomanometer), using AD620 instrumentation amplifier and TLC2272 level shift. This analog front end should also work for other millivolt instruments.
 
 
-## TINA-TI
+### TINA-TI
 
 DC simulation with TINA-TI:
 
@@ -14,28 +23,28 @@ $$ G = 1 + \frac{49.4\text{k}\Omega}{R_g} $$
 
 LM358 offset:
 
-$$ \frac{4.7\text{k}}{4.7\text{k} + 22 \text{k}} \times 3.3 V \approx 0.6 V$$
+$$ \frac{56 \text{k}}{47\text{k} + 56 \text{k}} \times 3.3 V \approx 1.5 V$$
 
 
 
-## MPS20N0040D
+### MPS20N0040D
 The MPS20N0040D is a millivolt-level bridge (≈50–100 mV full-scale; 4–6 kΩ)
 
 | <img src="https://github.com/auralius/afe-ref-design/blob/main/images/mps20n0040d_1.png" width="300"> | <img src="https://github.com/auralius/afe-ref-design/blob/main/images/mps20n0040d_2.png" width="300"> |
 | ----------------------------------------- | ----------------------------------------- |
 
-## LM358
+### TLC2272 (Dual, Low-Noise, Rail-To-Rail Operational Amplifier)
 This will be used to offset the instrumentation amplifier, giving headroom for possible undershoot or for signal that goes both ways (positive and negative).
 
-<img src="https://github.com/auralius/afe-ref-design/blob/main/images/lm358.png" width="300"> 
+<img src="https://github.com/auralius/afe-ref-design/blob/main/images/tlc2272.png" width="300"> 
 
-## AD620
+### AD620
 This is the instrumentation amplifier that is relatively cheap and widely available in Indonesian market.
 
 | <img src="https://github.com/auralius/afe-ref-design/blob/main/images/ad620_1.png" width="150"> | <img src="https://github.com/auralius/afe-ref-design/blob/main/images/ad620_2.png" width="150"> |
 | ----------------------------------------- | ----------------------------------------- |
 
-## Prototype 
+## Digital Controller
 We will use STM32F411CE (the black pill) as our digital processor.
 
 | <img src="https://github.com/auralius/afe-ref-design/blob/main/images/prototype1.png" width="250"> | <img src="https://github.com/auralius/afe-ref-design/blob/main/images/prototype2.png" width="330"> |
